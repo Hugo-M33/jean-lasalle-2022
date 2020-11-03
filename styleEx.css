@@ -1,0 +1,239 @@
+#titre_principal {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    min-height: 75px;
+    max-height: 175px;
+    margin-bottom: 10%;
+}
+
+#titre_principal > img {
+    max-height: 100px;
+    height: 100%;
+    margin: 5px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: #7e0e0e;
+    width: auto;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+#bloc_page {
+    background-image: url("bg.jpg");
+    border: 5px solid #000000;
+    border-radius: 2%;
+    margin: 15px;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#mainMenu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#mainMenu > li {
+    padding: 0.5em;
+    list-style: none;
+    font-size: 20px;
+}
+
+#mainMenu > li:hover {
+    background-color: rgba(145, 34, 34, 0.5);
+    color: white;
+}
+
+#banniere_image {
+    max-width: 100%;
+    height: 200px;
+    background-image: url("banniereVin.jpg");
+    background-size: contain;
+    border-radius: 3%;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    margin: 50px;
+}
+
+#banniere_image:hover {
+    background-image: url("saucisson.jpg");
+}
+
+#banniere_image > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+section article {
+    width: 66%;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+    padding-top: 25px;
+    margin: 0;
+}
+
+section article h2 {
+    text-align: center;
+    background-color: #0D21A1;
+    border: 5px solid #EEC643;
+    border-radius: 1%;
+    color: #8d0f0f;
+}
+
+section aside {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: rgba(97, 97, 97, 0.701);
+    border-radius: 10%;
+    margin-right: 10px;
+    min-width: 25%;
+}
+
+section aside h3 {
+    color: white;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
+
+section aside ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+section aside ul li {
+    margin: 5%;
+    padding: 0;
+    list-style: none;
+}
+
+section aside ul img {
+    max-width: 50px;
+}
+
+section aside ul img:hover {
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transform: rotate(1turn) scale(1.25,1.25);
+}
+
+.flou {
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+section article p {
+    font-size: 20px;
+    -webkit-text-stroke: 1px grey;
+    color: white;
+}
+
+section aside {
+    margin-left: 100px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 10vh;
+
+    border-radius: 0 0 2% 2%;
+}
+
+footer * {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#tweet {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 30vw;
+    min-height: 50vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+#tweet a {
+    margin-bottom: 5vh;
+}
+
+#tweet *:first-child {
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+}
+
+#mes_photos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 30vw;
+    min-height: 50vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+#mes_photos .cliches {
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    background-size: cover;
+    margin: 10px;
+    padding: 0;
+    border: 5px solid black;
+    border-radius: 3%;
+}
+
+#mes_photos *:first-child {
+    background-color: rgba(255, 255, 255, 0.527);
+    width: 100%;
+    align-self: stretch;
+    text-align: center;
+}
+
+#mes_photos .break {
+    margin: 0;
+    flex-basis: 100%;
+    padding: 0;
+}
+
+#mes_amis {
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 30vw;
+    height: 50vh;
+}
